@@ -1,16 +1,23 @@
 
 import './App.css'
+import Hero from './ui/Home/Hero/Hero'
+import Footer from './ui/share/Footer/Footer'
+import Navbar from './ui/share/Navbar/Navbar'
 
 function App() {
- 
+  const navItems = [
+    { name: "Home", link: "#home" },
+    { name: "Products", link: "#products" },
+    { name: "Resources", link: "#resources" },
+    { name: "Pricing", link: "#pricing" },
+  ];
 
   return (
     <>
       <div>
-        <h1 className='text-5xl font-bold text-center w-full mx-auto text-blue-700'>Hi </h1>
-        <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+       <Navbar navItems={navItems}/>
+       <Hero/>
+       <Footer/>
       </div>
     </>
   )

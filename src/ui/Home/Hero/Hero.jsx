@@ -1,8 +1,8 @@
 
 const Hero = () => {
     return (
-        <div>
-            
+        <div className="h-[1500px]">
+             <h1>This is hero sections</h1>
         </div>
     );
 };
