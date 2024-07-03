@@ -1,3 +1,10 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette")
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,8 +12,25 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
+      },
+      keyframes: {
+        orbit: {
+          "0%": {
+            transform:
+              "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          "100%": {
+            transform:
+              "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
+        },
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [
 
+  ]
+};

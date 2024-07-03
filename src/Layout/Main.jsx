@@ -1,13 +1,18 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 import Navbar from "../ui/share/Navbar/Navbar";
 import Footer from "../ui/share/Footer/Footer";
 import Hero from "../ui/Home/Hero/Hero";
 
 const Main = () => {
+    const navItems = [
+        { name: "Home", link: "#home" },
+        { name: "Products", link: "#products" },
+        { name: "Resources", link: "#resources" },
+        { name: "Pricing", link: "#pricing" },
+      ];
     return (
         <div>
-            <Navbar/>
-            <Outlet/>
+            <Navbar navItems={navItems}/>
             <Hero/>
             <Footer/>
         </div>
