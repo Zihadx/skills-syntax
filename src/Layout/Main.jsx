@@ -11,7 +11,7 @@ const Main = () => {
         { name: "Pricing", link: "#pricing" },
       ];
     return (
-        <div>
+        <div className="overflow-hidden">
             <Navbar navItems={navItems}/>
             <Hero/>
             <Footer/>
