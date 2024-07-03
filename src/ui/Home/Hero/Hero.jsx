@@ -46,7 +46,7 @@ const Hero = () => {
       ),
     };
     return (
-        <div className="relative flex h-[700px] w-full items-center justify-center overflow-hidden rounded-lg bg-background">
+        <div className="relative flex h-screen w-full items-center justify-center overflow-hidden rounded-lg bg-background">
       <div className="text-center space-y-6 relative overflow-hidden z-10 p-2">
       <h1 className="text-4xl md:text-6xl font-semibold">
       We’ve really sped up our workflow

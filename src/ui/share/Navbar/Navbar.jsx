@@ -53,7 +53,7 @@ const Navbar = () => {
             <h1 className="text-3xl font-bold">
               Sk
               <span className="text-[#7F6EFC]">i</span>
-              ll Sy
+              lls Sy
               <span className="text-[#7F6EFC]">n</span>
               tax
             </h1>
