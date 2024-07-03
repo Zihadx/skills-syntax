@@ -60,7 +60,7 @@ const Hero = () => {
       <p className="w-full md:w-3/4 mx-auto text-sm text-gray-500"> <span className="font-semibold">We’ve just released a new update!</span> Check out the all new dashboard view. Pages and now load faster.you can try us for free for 30 days.
       <br /> Join 4,000+ companies already growing</p>
       
-      <div className="flex justify-center mx-auto gap-2">
+      <div className="flex flex-col md:flex-row justify-center mx-auto gap-2">
         <button className="flex justify-center items-center  gap-2 font-medium border px-3 py-2 rounded-lg"> <FaArrowRightLong/> Start Learning Today</button>
 
         <button className="font-medium border px-3 py-2 rounded-lg bg-[#7F6EFC] text-white"> Join Now</button>
@@ -97,13 +97,14 @@ const Hero = () => {
         radius={350}
         duration={22}
         delay={15}
+        reverse
        
       >
         <Icons.awsIcon />
       </OrbitingCircles>
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
-        radius={450}
+        radius={550}
         duration={18}
         delay={20}
       >
