@@ -10,7 +10,6 @@ import androidIcon from '.././../../assets/All-icon/android.png'
 import mongodbIcon from '.././../../assets/All-icon/mongodb.png'
 import { FaArrowRightLong } from "react-icons/fa6";
 import OrbitingCircles from '../../../component/Hero/OrbitingCircles'
-
 const Hero = () => {
     const Icons = {
         jsIcon: () => (
@@ -51,6 +50,13 @@ const Hero = () => {
       <h1 className="text-4xl md:text-6xl font-semibold">
       We’ve really sped up our workflow
       </h1>
+
+      {/* <TitleText
+      className="text-center text-4xl md:text-6xl font-semibold"
+      text="We’ve really sped up our workflow"
+    /> */}
+
+
       <p className="w-full md:w-3/4 mx-auto text-sm text-gray-500"> <span className="font-semibold">We’ve just released a new update!</span> Check out the all new dashboard view. Pages and now load faster.you can try us for free for 30 days.
       <br /> Join 4,000+ companies already growing</p>
       
@@ -60,9 +66,6 @@ const Hero = () => {
         <button className="font-medium border px-3 py-2 rounded-lg bg-[#7F6EFC] text-white"> Join Now</button>
       </div>
       </div>
-
-      {/* Inner Circles */}
-    
       <OrbitingCircles
         className="h-[30px] w-[30px] border-none bg-transparent"
         duration={20}
@@ -71,8 +74,6 @@ const Hero = () => {
         reverse
       >
       </OrbitingCircles>
-
-      {/* Outer Circles (reverse) */}
       <OrbitingCircles
         className="h-[50px] w-[50px] border-none bg-transparent"
         radius={250}
@@ -148,7 +149,6 @@ const Hero = () => {
         radius={450}
         duration={20}
         delay={20}
-        reverse
       >
         <Icons.androidIcon />
       </OrbitingCircles>
